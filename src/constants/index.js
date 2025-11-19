@@ -4,6 +4,7 @@ import {
   java,
   cpp,
   javascript,
+  bash,
   html,
   css,
   reactjs,
@@ -44,7 +45,8 @@ export const navLinks = [
 export const services = [
   { title: "C", icon: c },
   { title: "Python", icon: python },
-  { title: "JavaScript", icon: java }
+  { title: "JavaScript", icon: java },
+  { title: "Bash", icon: bash }
 ];
 
 export const technologies = [

@@ -8,6 +8,7 @@ import python from "./tech-stack/python.png";
 import c from "./tech-stack/c.png";
 import cpp from "./tech-stack/cpp.png";
 import java from "./tech-stack/java.png";
+import bash from "./tech-stack/bash.svg";
 
 // Import project images
 import weatherpedia from "./projects/WeatherPedia.png";
@@ -40,6 +41,7 @@ export {
   c,
   cpp,
   java,
+  bash,
   github,
   css,
   git,
