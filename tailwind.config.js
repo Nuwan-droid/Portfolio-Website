@@ -4,16 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0F172A',
-        secondary: '#38BDF8',
-        tertiary: '#1E293B',
+        // Cybersecurity themed palette: deep navy + neon green accent
+        primary: '#071028', // deep navy background
+        secondary: '#00FF99', // neon green accent
+        tertiary: '#0b1220', // darker card/form background
         'black-100': '#100d25',
         'black-200': '#090325',
         'white-100': '#f3f3f3',
       },
       boxShadow: {
         card: '0 35px 120px -15px #211e35',
-        primary: '0 0 16px 0 #0F172A',
+        primary: '0 0 12px 0 #00FF99, 0 0 40px 8px rgba(0,255,153,0.12)',
       },
       screens: {
         xs: '450px',

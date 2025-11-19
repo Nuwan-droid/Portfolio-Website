@@ -26,15 +26,17 @@
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  /* cyber-themed neon gradient */
+  background: #00F5D4;
+  background: linear-gradient(-90deg, #00F5D4 0%, rgba(0, 255, 212, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #00F5D4 0%, rgba(0, 255, 212, 0) 100%);
 }
 
 .green-pink-gradient {
-  background: #00cea8;
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  /* neon green → cyan gradient for cyber accents */
+  background: #00F5D4;
+  background: linear-gradient(90.13deg, #00F5D4 1.9%, #00FF99 97.5%);
+  background: -webkit-linear-gradient(90.13deg, #00F5D4 1.9%, #00FF99 97.5%);
 }
 
 .black-gradient {
@@ -53,7 +55,8 @@
 .green-text-gradient,
 .blue-text-gradient,
 .pink-text-gradient {
-  background: linear-gradient(to top, #f12711, #f5af19);
+  /* unified neon text gradient used by tag badges */
+  background: linear-gradient(90deg, #00F5D4, #00FF99);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,7 +64,7 @@
 
 /* extra text gradient used by tags */
 .yellow-text-gradient {
-  background: linear-gradient(to top, #fceabb, #f8b500);
+  background: linear-gradient(90deg, #00F5D4, #00FF99);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
