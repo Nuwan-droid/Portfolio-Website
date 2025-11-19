@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 
 const ComputerModel = ({ isMobile }) => {
   const { scene } = useGLTF(
-    "./desktop_pc/scene.gltf",
+    "/desktop_pc/scene_embedded.gltf",
     undefined,
     (loader) => {
       const dracoLoader = new DRACOLoader();
@@ -37,12 +37,14 @@ const ComputerModel = ({ isMobile }) => {
 };
 
 const MemoizedComputerModel = React.memo(ComputerModel);
+MemoizedComputerModel.displayName = 'MemoizedComputerModel';
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
+    setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);

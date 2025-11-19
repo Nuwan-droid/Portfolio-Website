@@ -37,11 +37,32 @@
   background: -webkit-linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
+.black-gradient {
+  background: #0b0b0b;
+  background: linear-gradient(180deg, rgba(20,20,20,0.95) 0%, rgba(8,8,8,0.95) 100%);
+}
+
+.foggy-glass {
+  background: rgba(15, 23, 42, 0.6); /* slate-900 with opacity */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .orange-text-gradient,
 .green-text-gradient,
 .blue-text-gradient,
 .pink-text-gradient {
   background: linear-gradient(to top, #f12711, #f5af19);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* extra text gradient used by tags */
+.yellow-text-gradient {
+  background: linear-gradient(to top, #fceabb, #f8b500);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -122,7 +143,11 @@
   border-radius: 8px;
   outline: none;
   font-weight: 600;
-  placeholder-color: #999; /* Placeholder text color */
+}
+
+.input::placeholder {
+  color: #999; /* Placeholder text color */
+  opacity: 1; /* Ensure color applies in Safari/Firefox */
 }
 
 .input-error {

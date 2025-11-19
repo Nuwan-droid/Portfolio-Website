@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 
 const EarthModel = () => {
   const { scene } = useGLTF(
-    "./planet/scene.gltf",
+    "/planet/scene_embedded.gltf",
     undefined,
     (loader) => {
       const dracoLoader = new DRACOLoader();

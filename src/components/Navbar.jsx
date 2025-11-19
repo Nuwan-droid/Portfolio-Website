@@ -38,9 +38,7 @@ const Navbar = () => {
         </li>
       ))}
       <li
-        className={`text-${
-          isSecondary ? 'secondary' : 'white'
-        } hover:text-white text-[20px] font-medium cursor-pointer`}
+        className={`${isSecondary ? 'text-secondary' : 'text-white'} hover:text-white text-[20px] font-medium cursor-pointer`}
       >
         <button onClick={toggleResume}>Resume</button>
       </li>
@@ -63,8 +61,8 @@ const Navbar = () => {
           >
             <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
-              LOHIT&nbsp;
-              <span className="sm:block hidden">KOLLURI</span>
+              CHARITHA&nbsp;
+              <span className="sm:block hidden">JAYASINGHE</span>
             </p>
           </Link>
           {renderNavLinks(false)}

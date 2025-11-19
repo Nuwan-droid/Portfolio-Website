@@ -15,13 +15,13 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">lohit</span>
+            Hi, I'm <span className="text-[#915EFF]">CHARITH</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <div className={`${styles.heroSubText} mt-2 text-white-100`}>
             I do
             <Typewriter
               options={{
-                strings: ["CyberSecurity", "Ai & ML", "NLP"],
+                strings: ["PENTESTING", "BUG BOUNTY", "Ethical hacking"],
                 autoStart: true,
                 loop: true,
                 loopCount: Infinity,
@@ -29,7 +29,7 @@ const Hero = () => {
                 pauseFor: 1000,
               }}
             />
-          </p>
+          </div>
         </div>
       </div>
 
